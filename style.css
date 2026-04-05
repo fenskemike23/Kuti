@@ -648,3 +648,178 @@ body {
   color: #66778c;
   font-size: 0.86rem;
 }
+
+/* Travel Buddy Prototype v0.1 - Release Buddy Page */
+
+.release-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  padding: 24px 20px 90px;
+  box-shadow: 0 16px 40px rgba(31, 42, 55, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.release-intro {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f6faff;
+  border: 1px solid #e0ecff;
+}
+
+.release-intro h2 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.release-intro p {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #5b6b7f;
+}
+
+.release-buddy-summary {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 18px;
+  background: #f8fbff;
+  border: 1px solid #e1ebf5;
+}
+
+.release-buddy-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #2b6fff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.release-buddy-summary h3 {
+  margin-bottom: 4px;
+}
+
+.release-buddy-summary p {
+  color: #445469;
+  font-size: 0.93rem;
+  margin-bottom: 2px;
+}
+
+.release-buddy-summary span {
+  color: #6a7a90;
+  font-size: 0.86rem;
+}
+
+.release-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.release-form label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.release-input,
+.release-textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cfd9e6;
+  border-radius: 14px;
+  font-size: 1rem;
+  outline: none;
+  background: white;
+}
+
+.release-input:focus,
+.release-textarea:focus {
+  border-color: #2b6fff;
+  box-shadow: 0 0 0 3px rgba(43, 111, 255, 0.14);
+}
+
+.release-textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.privacy-check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  color: #445469;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.privacy-check input {
+  margin-top: 3px;
+}
+
+.release-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.release-note {
+  font-size: 0.86rem;
+  color: #6a7a90;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+/* Travel Buddy Prototype v0.1 - Release Reward Preview */
+
+.reward-preview-card {
+  margin-top: 10px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f8fbff;
+  border: 1px solid #e1ebf5;
+}
+
+.reward-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.reward-preview-item {
+  padding: 14px;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid #dbe6f2;
+}
+
+.reward-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #66778c;
+  margin-bottom: 6px;
+}
+
+.reward-value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1f2a37;
+}
+
+.reward-preview-note {
+  margin-top: 12px;
+  font-size: 0.86rem;
+  color: #6a7a90;
+  line-height: 1.4;
+}

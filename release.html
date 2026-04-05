@@ -1,0 +1,122 @@
+<!-- Travel Buddy Prototype v0.1 - Release Buddy Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Buddy - Release Buddy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="release-card">
+      <header class="dashboard-header">
+        <div>
+          <p class="eyebrow">Travel Buddy</p>
+          <h1>Release Buddy</h1>
+        </div>
+        <div class="logo-circle small">A</div>
+      </header>
+
+      <section class="release-intro">
+        <h2>Share the next chapter</h2>
+        <p>
+          Add a new photo and a short story before releasing this Buddy for the
+          next traveler. Public location details will be shown with a privacy delay.
+        </p>
+      </section>
+
+      <section class="release-buddy-summary">
+        <div class="release-buddy-avatar">A</div>
+        <div>
+          <h3>Buddy Atlas</h3>
+          <p>Currently in your custody</p>
+          <span>Last public release: Portland, OR</span>
+        </div>
+      </section>
+
+      <form class="release-form">
+        <label for="releasePhoto">Take or Upload Photo</label>
+        <input
+          type="file"
+          id="releasePhoto"
+          class="release-input"
+          accept="image/*"
+          capture="environment"
+        />
+
+        <label for="releaseLocation">Release Location</label>
+        <input
+          type="text"
+          id="releaseLocation"
+          class="release-input"
+          placeholder="Enter city, airport, hotel, or landmark"
+        />
+
+        <label for="releaseJourney">Buddy Journey Description</label>
+        <textarea
+          id="releaseJourney"
+          class="release-textarea"
+          placeholder="Describe where Buddy Atlas has been, what happened on the trip, or where it is headed next."
+        ></textarea>
+
+        <label for="releaseCaption">Short Caption</label>
+        <input
+          type="text"
+          id="releaseCaption"
+          class="release-input"
+          placeholder="Example: Atlas made it to Seattle after a rainy train ride."
+        />
+
+        <label class="privacy-check">
+          <input type="checkbox" checked />
+          Show only broad public location after privacy delay
+        </label>
+        <section class="reward-preview-card">
+  <div class="section-head">
+    <h3>Reward Estimate</h3>
+  </div>
+
+  <div class="reward-preview-grid">
+    <article class="reward-preview-item">
+      <span class="reward-label">Miles This Release</span>
+      <p class="reward-value">218</p>
+    </article>
+
+    <article class="reward-preview-item">
+      <span class="reward-label">Estimated Points</span>
+      <p class="reward-value">435</p>
+    </article>
+
+    <article class="reward-preview-item">
+      <span class="reward-label">Bonus Tier</span>
+      <p class="reward-value">100+ Mile Bonus</p>
+    </article>
+  </div>
+
+  <p class="reward-preview-note">
+    Final rewards are confirmed after release verification and privacy-safe location processing.
+  </p>
+</section>
+        <div class="release-actions">
+          <a href="buddy.html" class="btn btn-ghost btn-link">Back to Buddy</a>
+          <button type="button" class="btn btn-primary">Confirm Release</button>
+        </div>
+
+        <p class="release-note">
+          The Buddy will appear publicly as available after verification and privacy-safe location processing.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="home.html" class="nav-link">Home</a>
+    <a href="find.html" class="nav-link">Find Buddy</a>
+    <a href="rewards.html" class="nav-link">Rewards</a>
+    <a href="profile.html" class="nav-link">Profile</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
