@@ -357,7 +357,7 @@ body {
 }
 
 
-/* Travel Buddy Prototype v0.1 - Find Buddy Page */
+/* /* Travel Buddy Prototype v0.1 - Find Buddy Page */
 
 .find-card {
   background: rgba(255, 255, 255, 0.92);
@@ -390,16 +390,21 @@ body {
   margin-top: 18px;
 }
 
-.search-input {
+.search-input,
+.sighting-input,
+.sighting-textarea {
   width: 100%;
   padding: 14px;
   border: 1px solid #cfd9e6;
   border-radius: 14px;
   font-size: 1rem;
   outline: none;
+  background: white;
 }
 
-.search-input:focus {
+.search-input:focus,
+.sighting-input:focus,
+.sighting-textarea:focus {
   border-color: #2b6fff;
   box-shadow: 0 0 0 3px rgba(43, 111, 255, 0.14);
 }
@@ -457,4 +462,39 @@ body {
 .buddy-info span {
   font-size: 0.86rem;
   color: #6a7a90;
+}
+
+.buddy-link {
+  color: #1f2a37;
+  text-decoration: none;
+}
+
+.buddy-link:hover {
+  color: #2b6fff;
+}
+
+.sighting-card {
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f8fbff;
+  border: 1px solid #e1ebf5;
+}
+
+.sighting-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.sighting-form label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.sighting-textarea {
+  min-height: 100px;
+  resize: vertical;
 }

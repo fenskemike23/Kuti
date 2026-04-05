@@ -19,10 +19,10 @@
       </header>
 
       <section class="find-intro">
-        <h2>Explore Buddy activity</h2>
+        <h2>Track and share Buddy sightings</h2>
         <p>
-          Discover nearby Travel Buddies, track recent sightings, and follow
-          their journeys across destinations.
+          Discover nearby Travel Buddies, follow their journeys, and upload a
+          new photo when you find one so its story continues for the next traveler.
         </p>
       </section>
 
@@ -56,7 +56,7 @@
         <article class="buddy-item">
           <div class="buddy-avatar">A</div>
           <div class="buddy-info">
-            <h4>Buddy Atlas</h4>
+            <h4><a href="buddy.html" class="buddy-link">Buddy Atlas</a></h4>
             <p>Seen near Portland International Airport</p>
             <span>Last updated 2 hours ago</span>
           </div>
@@ -65,7 +65,7 @@
         <article class="buddy-item">
           <div class="buddy-avatar">N</div>
           <div class="buddy-info">
-            <h4>Buddy Nova</h4>
+            <h4><a href="buddy.html" class="buddy-link">Buddy Nova</a></h4>
             <p>Checked in at Downtown Seattle Hotel District</p>
             <span>Last updated today</span>
           </div>
@@ -74,11 +74,51 @@
         <article class="buddy-item">
           <div class="buddy-avatar">S</div>
           <div class="buddy-info">
-            <h4>Buddy Sol</h4>
+            <h4><a href="buddy.html" class="buddy-link">Buddy Sol</a></h4>
             <p>Recently moved through San Francisco</p>
             <span>Last updated yesterday</span>
           </div>
         </article>
+      </section>
+
+      <section class="sighting-card">
+        <div class="section-head">
+          <h3>Report a Buddy Sighting</h3>
+        </div>
+
+        <form class="sighting-form">
+          <label for="buddySelect">Buddy</label>
+          <select id="buddySelect" class="sighting-input">
+            <option>Buddy Atlas</option>
+            <option>Buddy Nova</option>
+            <option>Buddy Sol</option>
+          </select>
+
+          <label for="buddyPhoto">Take or Upload Photo</label>
+          <input
+            type="file"
+            id="buddyPhoto"
+            class="sighting-input"
+            accept="image/*"
+          />
+
+          <label for="sightingLocation">Location</label>
+          <input
+            type="text"
+            id="sightingLocation"
+            class="sighting-input"
+            placeholder="Enter city, hotel, airport, or landmark"
+          />
+
+          <label for="sightingCaption">Caption</label>
+          <textarea
+            id="sightingCaption"
+            class="sighting-textarea"
+            placeholder="Add a short note about where you found this Buddy"
+          ></textarea>
+
+          <button type="button" class="btn btn-primary">Post Sighting</button>
+        </form>
       </section>
     </section>
   </main>
