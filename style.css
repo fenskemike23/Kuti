@@ -167,7 +167,7 @@ body {
   }
 }
 
-/* Travel Buddy Prototype v0.2 - Home Dashboard */
+/* Travel Buddy Prototype v0.1 - Home Dashboard */
 
 .dashboard-card {
   background: rgba(255, 255, 255, 0.92);
@@ -354,4 +354,107 @@ body {
   background: #eef4ff;
   color: #2b6fff;
   font-weight: 600;
+}
+
+
+/* Travel Buddy Prototype v0.1 - Find Buddy Page */
+
+.find-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  padding: 24px 20px 90px;
+  box-shadow: 0 16px 40px rgba(31, 42, 55, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.find-intro {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f6faff;
+  border: 1px solid #e0ecff;
+}
+
+.find-intro h2 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.find-intro p {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #5b6b7f;
+}
+
+.search-panel {
+  margin-top: 18px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cfd9e6;
+  border-radius: 14px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #2b6fff;
+  box-shadow: 0 0 0 3px rgba(43, 111, 255, 0.14);
+}
+
+.large-map {
+  height: 240px;
+}
+
+.pin-four {
+  top: 140px;
+  right: 120px;
+}
+
+.buddy-list {
+  margin-top: 20px;
+}
+
+.buddy-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.buddy-item:last-child {
+  border-bottom: none;
+}
+
+.buddy-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #2b6fff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.buddy-info h4 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.buddy-info p {
+  font-size: 0.93rem;
+  color: #445469;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.buddy-info span {
+  font-size: 0.86rem;
+  color: #6a7a90;
 }
