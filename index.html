@@ -1,3 +1,64 @@
-#new file and first commit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Buddy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="welcome-card">
+      <div class="brand">
+        <div class="logo-circle">TB</div>
+        <h1>Travel Buddy</h1>
+        <p class="tagline">
+          Discover, carry, and share travel companions across the world.
+        </p>
+      </div>
 
-print("here is an addition")
+      <form id="authForm" class="auth-form">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        <button type="button" id="createAccountBtn" class="btn btn-secondary">
+          Create Account
+        </button>
+        <button type="button" id="guestBtn" class="btn btn-ghost">
+          Continue as Guest
+        </button>
+
+        <a href="#" class="forgot-link">Forgot Password?</a>
+
+        <p id="message" class="message"></p>
+      </form>
+
+      <section class="explore-preview">
+        <h2>Start the journey</h2>
+        <p>
+          Follow Travel Buddies, unlock rewards, and watch their stories grow
+          across cities, hotels, flights, and destinations.
+        </p>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

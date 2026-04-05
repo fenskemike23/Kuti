@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eaf6ff 0%, #dcefff 45%, #f8fbff 100%);
+  color: #1f2a37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.app-shell {
+  width: 100%;
+  max-width: 420px;
+}
+
+.welcome-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  padding: 28px 22px;
+  box-shadow: 0 16px 40px rgba(31, 42, 55, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.logo-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #2b6fff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0 auto 14px;
+}
+
+.brand h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: #5b6b7f;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-form label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.auth-form input {
+  padding: 14px;
+  border: 1px solid #cfd9e6;
+  border-radius: 14px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.auth-form input:focus {
+  border-color: #2b6fff;
+  box-shadow: 0 0 0 3px rgba(43, 111, 255, 0.14);
+}
+
+.btn {
+  border: none;
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background: #2b6fff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1f5add;
+}
+
+.btn-secondary {
+  background: #eef4ff;
+  color: #2b6fff;
+}
+
+.btn-secondary:hover {
+  background: #dde9ff;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #445469;
+  border: 1px solid #d7e0eb;
+}
+
+.btn-ghost:hover {
+  background: #f7faff;
+}
+
+.forgot-link {
+  text-align: center;
+  text-decoration: none;
+  color: #2b6fff;
+  font-size: 0.92rem;
+  margin-top: 4px;
+}
+
+.message {
+  min-height: 20px;
+  text-align: center;
+  font-size: 0.92rem;
+  margin-top: 4px;
+  color: #c0392b;
+}
+
+.explore-preview {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f6faff;
+  border: 1px solid #e0ecff;
+}
+
+.explore-preview h2 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.explore-preview p {
+  font-size: 0.94rem;
+  line-height: 1.45;
+  color: #5b6b7f;
+}
+
+@media (max-width: 480px) {
+  .welcome-card {
+    padding: 24px 18px;
+  }
+
+  .brand h1 {
+    font-size: 1.8rem;
+  }
+}
