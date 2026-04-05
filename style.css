@@ -166,3 +166,192 @@ body {
     font-size: 1.8rem;
   }
 }
+
+/* Travel Buddy Prototype v0.2 - Home Dashboard */
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  padding: 24px 20px 90px;
+  box-shadow: 0 16px 40px rgba(31, 42, 55, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.dashboard-header,
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6a7a90;
+  margin-bottom: 6px;
+}
+
+.logo-circle.small {
+  width: 52px;
+  height: 52px;
+  font-size: 1rem;
+}
+
+.scan-hero,
+.map-preview,
+.activity-feed,
+.info-card {
+  margin-top: 18px;
+}
+
+.scan-hero {
+  background: linear-gradient(135deg, #2b6fff, #5d8dff);
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.scan-hero h2 {
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.scan-hero p {
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+
+.scan-btn {
+  width: 100%;
+  background: white;
+  color: #2b6fff;
+}
+
+.map-box {
+  position: relative;
+  height: 180px;
+  margin-top: 12px;
+  border-radius: 18px;
+  background: #e9f3ff;
+  border: 1px solid #d7e7ff;
+  overflow: hidden;
+}
+
+.map-box::before,
+.map-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(43, 111, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(43, 111, 255, 0.08) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.map-pin {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #2b6fff;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 6px 14px rgba(43, 111, 255, 0.3);
+  z-index: 1;
+}
+
+.pin-one { top: 34px; left: 70px; }
+.pin-two { top: 88px; right: 72px; }
+.pin-three { bottom: 34px; left: 150px; }
+
+.map-label {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  z-index: 1;
+  font-size: 0.9rem;
+  color: #516174;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.info-card {
+  background: #f8fbff;
+  border: 1px solid #e1ebf5;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.big-stat {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 10px 0 4px;
+}
+
+.muted,
+.activity-item span,
+.section-head a {
+  color: #66778c;
+  font-size: 0.9rem;
+}
+
+.section-head a {
+  text-decoration: none;
+  color: #2b6fff;
+}
+
+.activity-item {
+  display: flex;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-dot {
+  width: 10px;
+  height: 10px;
+  background: #2b6fff;
+  border-radius: 50%;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  width: calc(100% - 24px);
+  max-width: 420px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #dbe6f2;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 10px 24px rgba(31, 42, 55, 0.12);
+}
+
+.nav-link {
+  text-decoration: none;
+  text-align: center;
+  color: #607186;
+  font-size: 0.88rem;
+  padding: 10px 4px;
+  border-radius: 12px;
+}
+
+.nav-link.active {
+  background: #eef4ff;
+  color: #2b6fff;
+  font-weight: 600;
+}
