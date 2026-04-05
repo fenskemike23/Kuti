@@ -52,7 +52,14 @@
           class="release-input"
           placeholder="Enter city, airport, hotel, or landmark"
         />
-
+        <label for="releaseMiles">Miles Traveled This Release</label>
+        <input
+          type="number"
+          id="releaseMiles"
+          class="release-input"
+          placeholder="Enter miles traveled"
+          min="0"
+/>
         <label for="releaseJourney">Buddy Journey Description</label>
         <textarea
           id="releaseJourney"
@@ -72,32 +79,32 @@
           <input type="checkbox" checked />
           Show only broad public location after privacy delay
         </label>
-        <section class="reward-preview-card">
-  <div class="section-head">
-    <h3>Reward Estimate</h3>
-  </div>
+    <section class="reward-preview-card">
+      <div class="section-head">
+        <h3>Reward Estimate</h3>
+      </div>
 
-  <div class="reward-preview-grid">
-    <article class="reward-preview-item">
-      <span class="reward-label">Miles This Release</span>
-      <p class="reward-value">218</p>
-    </article>
+      <div class="reward-preview-grid">
+        <article class="reward-preview-item">
+          <span class="reward-label">Miles This Release</span>
+          <p class="reward-value" id="previewMiles">0</p>
+        </article>
 
-    <article class="reward-preview-item">
-      <span class="reward-label">Estimated Points</span>
-      <p class="reward-value">435</p>
-    </article>
+        <article class="reward-preview-item">
+          <span class="reward-label">Estimated Points</span>
+          <p class="reward-value" id="previewPoints">0</p>
+        </article>
 
-    <article class="reward-preview-item">
-      <span class="reward-label">Bonus Tier</span>
-      <p class="reward-value">100+ Mile Bonus</p>
-    </article>
-  </div>
+        <article class="reward-preview-item">
+          <span class="reward-label">Bonus Tier</span>
+          <p class="reward-value" id="previewBonus">No bonus yet</p>
+        </article>
+      </div>
 
-  <p class="reward-preview-note">
-    Final rewards are confirmed after release verification and privacy-safe location processing.
-  </p>
-</section>
+        <p class="reward-preview-note">
+  Draft formula: 1 point per mile, plus milestone bonuses at 100, 500, and 1,000 miles.
+       </p>
+    </section>
         <div class="release-actions">
           <a href="buddy.html" class="btn btn-ghost btn-link">Back to Buddy</a>
           <button type="button" class="btn btn-primary">Confirm Release</button>
