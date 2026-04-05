@@ -1,3 +1,4 @@
+// Travel Buddy Prototype v0.1 - Global Script
 const authForm = document.getElementById("authForm");
 const createAccountBtn = document.getElementById("createAccountBtn");
 const guestBtn = document.getElementById("guestBtn");
