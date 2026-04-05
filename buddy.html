@@ -1,0 +1,142 @@
+<!-- Travel Buddy Prototype v0.1 - Buddy Profile Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Buddy - Buddy Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="buddy-profile-card">
+      <header class="dashboard-header">
+        <div>
+          <p class="eyebrow">Travel Buddy</p>
+          <h1>Buddy Atlas</h1>
+        </div>
+        <div class="logo-circle small">A</div>
+      </header>
+
+      <section class="buddy-hero">
+        <div class="buddy-hero-image">
+          <div class="buddy-hero-badge">Travel Buddy</div>
+        </div>
+
+        <div class="buddy-hero-text">
+          <p class="buddy-status">Status: In transit</p>
+          <p class="buddy-location">Last public release: Portland, OR</p>
+          <p class="buddy-privacy-note">
+            Public locations are shown with a privacy delay for traveler safety.
+          </p>
+        </div>
+      </section>
+
+      <section class="buddy-stats-grid">
+        <article class="info-card">
+          <h3>Miles Traveled</h3>
+          <p class="big-stat">4,280</p>
+          <p class="muted">Across verified check-ins</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Countries</h3>
+          <p class="big-stat">3</p>
+          <p class="muted">Visited so far</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Sightings</h3>
+          <p class="big-stat">14</p>
+          <p class="muted">Shared by travelers</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Finders</h3>
+          <p class="big-stat">9</p>
+          <p class="muted">Unique travelers</p>
+        </article>
+      </section>
+
+      <section class="buddy-summary-card">
+        <div class="section-head">
+          <h3>Buddy Story</h3>
+        </div>
+        <p>
+          Buddy Atlas has traveled through airports, hotels, and city centers,
+          building a photo story with each new traveler. Every release adds a new
+          chapter to its journey.
+        </p>
+      </section>
+
+      <section class="buddy-actions">
+        <button class="btn btn-primary">Scan Buddy</button>
+        <a href="release.html" class="btn btn-secondary btn-link">Release Buddy</a>
+      </section>
+
+      <section class="journey-timeline">
+        <div class="section-head">
+          <h3>Journey Timeline</h3>
+        </div>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <img
+              src="https://placehold.co/600x360"
+              alt="Traveler photo with Buddy Atlas"
+              class="timeline-photo"
+            />
+            <p class="timeline-location">Portland, OR · April 2026</p>
+            <p class="timeline-caption">
+              “Found Buddy Atlas near the airport before an early morning flight.”
+            </p>
+            <span class="timeline-user">Shared by @travelernorth</span>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <img
+              src="https://placehold.co/600x360"
+              alt="Traveler photo with Buddy Atlas"
+              class="timeline-photo"
+            />
+            <p class="timeline-location">Seattle, WA · March 2026</p>
+            <p class="timeline-caption">
+              “Buddy Atlas spent the night in downtown Seattle before heading south.”
+            </p>
+            <span class="timeline-user">Shared by @cityroute</span>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <img
+              src="https://placehold.co/600x360"
+              alt="Traveler photo with Buddy Atlas"
+              class="timeline-photo"
+            />
+            <p class="timeline-location">Vancouver, BC · March 2026</p>
+            <p class="timeline-caption">
+              “A rainy stop, a warm café, and the start of Buddy Atlas’s newest route.”
+            </p>
+            <span class="timeline-user">Shared by @routefinder</span>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="home.html" class="nav-link">Home</a>
+    <a href="find.html" class="nav-link">Find Buddy</a>
+    <a href="rewards.html" class="nav-link">Rewards</a>
+    <a href="profile.html" class="nav-link">Profile</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

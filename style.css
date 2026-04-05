@@ -498,3 +498,153 @@ body {
   min-height: 100px;
   resize: vertical;
 }
+
+/* Travel Buddy Prototype v0.1 - Buddy Profile Page */
+
+.buddy-profile-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  padding: 24px 20px 90px;
+  box-shadow: 0 16px 40px rgba(31, 42, 55, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.buddy-hero {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 20px;
+  background: #f8fbff;
+  border: 1px solid #e1ebf5;
+}
+
+.buddy-hero-image {
+  height: 180px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2b6fff, #9ec5ff);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.buddy-hero-badge {
+  background: rgba(255, 255, 255, 0.92);
+  color: #2b6fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.buddy-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.buddy-status {
+  font-weight: 700;
+  color: #1f2a37;
+}
+
+.buddy-location {
+  color: #445469;
+  font-size: 0.95rem;
+}
+
+.buddy-privacy-note {
+  color: #66778c;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.buddy-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.buddy-summary-card {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f6faff;
+  border: 1px solid #e0ecff;
+}
+
+.buddy-summary-card p {
+  margin-top: 10px;
+  color: #445469;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.buddy-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.journey-timeline {
+  margin-top: 22px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background: #2b6fff;
+  border-radius: 50%;
+  margin-top: 10px;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-photo {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.timeline-location {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #1f2a37;
+  margin-bottom: 6px;
+}
+
+.timeline-caption {
+  color: #445469;
+  line-height: 1.45;
+  font-size: 0.94rem;
+  margin-bottom: 6px;
+}
+
+.timeline-user {
+  color: #66778c;
+  font-size: 0.86rem;
+}
