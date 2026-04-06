@@ -780,7 +780,7 @@ body {
   margin-top: 4px;
 }
 
-/* Travel Buddy Prototype v0.1 - Release Reward Preview */
+/* Travel Buddy Prototype v0.1 - Release page Reward Preview */
 
 .reward-preview-card {
   margin-top: 10px;
@@ -822,4 +822,106 @@ body {
   font-size: 0.86rem;
   color: #6a7a90;
   line-height: 1.4;
+}
+
+/* Travel Buddy Prototype v0.1 - Rewards Page */
+
+.rewards-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  padding: 24px 20px 90px;
+  box-shadow: 0 16px 40px rgba(31, 42, 55, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.rewards-hero {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2b6fff, #5d8dff);
+  color: white;
+}
+
+.rewards-hero h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.rewards-hero p {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.rewards-balance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.reward-tiers-card,
+.offers-card,
+.reward-history-card {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f8fbff;
+  border: 1px solid #e1ebf5;
+}
+
+.reward-tier-item,
+.offer-item,
+.reward-history-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.reward-tier-item:last-child,
+.offer-item:last-child,
+.reward-history-item:last-child {
+  border-bottom: none;
+}
+
+.reward-tier-title {
+  font-weight: 700;
+  color: #1f2a37;
+  margin-bottom: 4px;
+}
+
+.reward-tier-subtext {
+  font-size: 0.86rem;
+  color: #66778c;
+}
+
+.offer-badge {
+  min-width: 56px;
+  height: 32px;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #2b6fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.offer-content h4 {
+  font-size: 0.96rem;
+  margin-bottom: 4px;
+  color: #1f2a37;
+}
+
+.offer-content p {
+  font-size: 0.9rem;
+  color: #66778c;
+  line-height: 1.4;
+}
+
+.reward-history-item {
+  justify-content: flex-start;
 }
