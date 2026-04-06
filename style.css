@@ -925,3 +925,170 @@ body {
 .reward-history-item {
   justify-content: flex-start;
 }
+
+/* Travel Buddy Prototype v0.1 - Profile Page */
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  padding: 24px 20px 90px;
+  box-shadow: 0 16px 40px rgba(31, 42, 55, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.profile-hero {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2b6fff, #9ec5ff);
+  color: white;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #2b6fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.profile-info h2 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.profile-handle {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+
+.profile-bio {
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.profile-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.profile-section-card {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f8fbff;
+  border: 1px solid #e1ebf5;
+}
+
+.profile-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.profile-detail-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.profile-detail-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.profile-detail-label {
+  color: #66778c;
+  font-size: 0.9rem;
+}
+
+.profile-detail-value {
+  color: #1f2a37;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.profile-activity-item {
+  display: flex;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.profile-activity-item:last-child {
+  border-bottom: none;
+}
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.badge-item {
+  background: white;
+  border: 1px solid #dbe6f2;
+  border-radius: 16px;
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.badge-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #2b6fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.badge-item p {
+  font-size: 0.9rem;
+  color: #1f2a37;
+  line-height: 1.35;
+}
+
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.settings-item {
+  display: block;
+  text-decoration: none;
+  color: #1f2a37;
+  background: white;
+  border: 1px solid #dbe6f2;
+  border-radius: 14px;
+  padding: 14px;
+  font-weight: 600;
+}
+
+.settings-item:hover {
+  background: #f7faff;
+}
+
