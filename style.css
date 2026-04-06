@@ -1092,3 +1092,197 @@ body {
   background: #f7faff;
 }
 
+/* Travel Buddy Prototype v0.1 - Scan Page */
+
+.scan-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  padding: 24px 20px 90px;
+  box-shadow: 0 16px 40px rgba(31, 42, 55, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.scan-hero-panel {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f6faff;
+  border: 1px solid #e0ecff;
+}
+
+.scan-hero-panel h2 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.scan-hero-panel p {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #5b6b7f;
+}
+
+.scanner-panel,
+.scan-preview-card {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f8fbff;
+  border: 1px solid #e1ebf5;
+}
+
+.scanner-frame {
+  position: relative;
+  height: 260px;
+  margin-top: 14px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #dfeeff 0%, #eef6ff 100%);
+  border: 1px solid #d8e6f8;
+  overflow: hidden;
+}
+
+.scanner-corners {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-color: #2b6fff;
+  border-style: solid;
+  z-index: 2;
+}
+
+.corner-top-left {
+  top: 28px;
+  left: 28px;
+  border-width: 4px 0 0 4px;
+  border-top-left-radius: 12px;
+}
+
+.corner-top-right {
+  top: 28px;
+  right: 28px;
+  border-width: 4px 4px 0 0;
+  border-top-right-radius: 12px;
+}
+
+.corner-bottom-left {
+  bottom: 48px;
+  left: 28px;
+  border-width: 0 0 4px 4px;
+  border-bottom-left-radius: 12px;
+}
+
+.corner-bottom-right {
+  bottom: 48px;
+  right: 28px;
+  border-width: 0 4px 4px 0;
+  border-bottom-right-radius: 12px;
+}
+
+.scanner-line {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  top: 50%;
+  height: 3px;
+  background: rgba(43, 111, 255, 0.7);
+  border-radius: 999px;
+  transform: translateY(-50%);
+}
+
+.scanner-label {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  right: 14px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5b6b7f;
+}
+
+.scan-main-btn {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.scanned-buddy-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.scanned-buddy-item:last-child {
+  border-bottom: none;
+}
+
+.scanned-buddy-thumb {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #2b6fff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.scanned-buddy-info h4 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.scanned-buddy-info p {
+  font-size: 0.92rem;
+  color: #445469;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.scanned-buddy-info span {
+  font-size: 0.84rem;
+  color: #6a7a90;
+}
+
+.preview-btn {
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2b6fff;
+  background: #eef4ff;
+  padding: 10px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.scan-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.scan-step-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: white;
+  border: 1px solid #dbe6f2;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.scan-step-number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #2b6fff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
